@@ -59,9 +59,9 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 [LeaderBoard] <a name="about-project"></a>
 
-> Simple site to display Information from and API
+> Simple site to display Information from an API
 
-**[Leaderboard]** is a...
+
 
 ## 🛠 Built With <a name="built-with"></a>
 
