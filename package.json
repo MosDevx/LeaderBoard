@@ -30,6 +30,6 @@
     "build:dev": "webpack --mode=development",
     "build:prod": "webpack --mode=production --define-process-env-node-env=production",
     "watch": "webpack --watch",
-    "serve": "webpack serve"
+    "start": "webpack serve"
   }
 }

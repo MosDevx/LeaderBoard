@@ -116,7 +116,7 @@ git clone https://github.com/MosDevx/LeaderBoard
 
 To run the project, execute the following command:
 
-Open index.html in your Browser
+npm run start
 
 
 
