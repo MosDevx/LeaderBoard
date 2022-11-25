@@ -73,37 +73,34 @@ h6 {
   isolation: isolate;
 }
 
-.main{
-	margin: auto;
-	text-align: start;
-	width:70%;
+.main {
+  margin: auto;
+  text-align: start;
+  width: 70%;
 }
 
-.main-section{
-	display: flex;
-	margin: auto;
-	justify-content: space-around;
-	align-items: center;
-	padding:30px;
+.main-section {
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
 }
 
-.display-title{
-	display: flex;
-	justify-content: space-between;
-	/* width: 200px; */
+.display-title {
+  display: flex;
+  justify-content: space-between;
+
+  /* width: 200px; */
 }
 
-.add-form{
-	display: flex;
-	flex-direction: column;
-	align-items: baseline;
-	justify-content:space-evenly
-
+.add-form {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: space-evenly;
 }
 
-table tr:nth-child(odd){
-	
-	background-color: antiquewhite;
-}
-table tr:nth-child(even){
+tr:nth-child(odd) {
+  background-color: antiquewhite;
 }
