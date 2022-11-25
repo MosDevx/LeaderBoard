@@ -115,7 +115,9 @@ h6 {
   justify-content: space-evenly;
   height: 200px;
 }
-
+input{
+  border:5px solid black;
+}
 .table {
   border: 5px solid black;
   width: 300px;
