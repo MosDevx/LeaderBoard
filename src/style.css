@@ -1,0 +1,140 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  3. Allow percentage-based heights in the application
+*/
+html,
+body {
+  height: 100%;
+}
+
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.title {
+  font-size: 40px;
+  margin-left: 40px;
+  margin-top: 50px;
+}
+
+.main {
+  margin: auto;
+  text-align: start;
+  width: 100%;
+  border: 5px solid black;
+  height: 100%;
+}
+
+.main-section {
+  width: 70%;
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+  margin-top: 30px;
+}
+
+.display-title {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.button {
+  box-shadow: 4px 4px 0 2px rgba(0, 0, 0, 0.85);
+}
+
+.add-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  height: 200px;
+}
+
+input {
+  border: 5px solid black;
+}
+
+.table {
+  border: 5px solid black;
+  width: 300px;
+  height: 200px;
+}
+
+tr:nth-child(odd) {
+  background-color: rgb(234, 230, 230);
+}
+
+.footer {
+  width: 100%;
+  height: 30px;
+  background-color: rgb(154, 154, 154);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
