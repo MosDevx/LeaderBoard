@@ -84,7 +84,7 @@ h6 {
   text-align: start;
   width: 100%;
   border: 5px solid black;
-  height: 100%;
+  /* height: ; */
 }
 
 .main-section {
@@ -92,7 +92,7 @@ h6 {
   display: flex;
   margin: auto;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   padding: 30px;
   margin-top: 30px;
 }

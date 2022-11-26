@@ -1,5 +1,5 @@
-async function postScore(user,score){
-	// let gameId = createGame()
+async function postScore(user,score,gameID){
+
 	let response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameID}/scores/',{
 		method:'POST',
 		body: JSON.stringify({
@@ -14,3 +14,5 @@ async function postScore(user,score){
 	let json = await response.json()
 	console.log(json)
 }
+
+export default postScore

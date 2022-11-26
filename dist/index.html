@@ -23,26 +23,11 @@
 				<section class="display-section">
           <div class="display-title">
             <h2>Recent Scores</h2>
-            <button class="button">Refresh</button>
+            <button class="button" id="refresh-button">Refresh</button>
           </div>
 
-          <table class="table">
-            <tr>
-              <td>Namely McNamerson:100</td>
-            </tr>
-						<tr>
-              <td>Namely McNamerson:100</td>
-            </tr>
-						<tr>
-              <td>Namely McNamerson:100</td>
-            </tr>
-						<tr>
-              <td>Namely McNamerson:100</td>
-            </tr>
-						<tr>
-              <td>Namely McNamerson:100</td>
-            </tr>
-						
+          <table class="table" id="scores-table">
+           	
 						
          
 					</table>
@@ -52,10 +37,10 @@
 					<div>
 						<h2>Add your Score</h2>
 					</div>
-					<form action="" class="add-form">
-						<input type="text" placeholder="Your name"/>
-						<input type="text" placeholder="Your score"/>
-						<button class="button">Submit</button>
+					<form action="" class="add-form" id="add-form">
+						<input type="text" id="name-field" placeholder="Your name"/>
+						<input type="text" id="score-field" placeholder="Your score"/>
+						<input type="submit" class="button"></input>
 					</form>
 				</section>
       
