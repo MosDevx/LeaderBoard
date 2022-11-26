@@ -52,6 +52,22 @@ addForm.addEventListener('',()=>{
 
 })
 
+if (typeof addForm === 'object' && addForm !== null && 'addEventListener' in addForm) {
+  addForm.addEventListener('submit',(e)=> {
+		e.preventDefault()
+    console.log('box clicked');
+		let name = nameField.value
+		let score = scoreField.value
+		if(name && score){
+
+			postScore(name,score,gameID)
+			nameField.value = ''
+			scoreField.value =''
+		}
+		}
+  )
+	
+}
 
 
 (async() =>{
