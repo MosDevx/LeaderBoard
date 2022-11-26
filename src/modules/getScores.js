@@ -1,9 +1,8 @@
-async function getScores(gameID){
-	let response = await fetch( 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameID}/scores/');
+async function getScores(gameID) {
+  const response = await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameID}/scores/`);
 
-	let json = await response.json()
-	// console.log(json)
-	return json
+  const json = await response.json();
+  return json;
 }
 
-export default getScores
+export default getScores;

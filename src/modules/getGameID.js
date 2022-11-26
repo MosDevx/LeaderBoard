@@ -1,18 +1,17 @@
-async function getGameID(){
-	let response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/',{
-		method:'POST',
-		body: JSON.stringify({
-			"name":"cool-name"
-		}),
-		headers: {
-			'Content-type': 'application/json; charset=UTF-8',
-		},
-	})
+async function getGameID() {
+  const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/', {
+    method: 'POST',
+    body: JSON.stringify({
+      name: 'cool-name',
+    }),
+    headers: {
+      'Content-type': 'application/json; charset=UTF-8',
+    },
+  });
 
-	let json = await response.json()
-	let gameID = Array.from(json.result.split(' '))[3]
-	// console.log(gameID);
-	return gameID
+  const json = await response.json();
+  const gameID = Array.from(json.result.split(' '))[3];
+  return gameID;
 }
 
-export default getGameID
+export default getGameID;
