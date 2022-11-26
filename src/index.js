@@ -52,7 +52,6 @@ refreshButton.addEventListener('click', async () => {
   populateTable();
 });
 
-
 if (typeof addForm === 'object' && addForm !== null && 'addEventListener' in addForm) {
   addForm.addEventListener('submit', async (e) => {
     e.preventDefault();
