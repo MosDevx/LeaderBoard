@@ -41,27 +41,28 @@ const appendScores = (arrayData) => {
     scoresTable.appendChild(tr);
   });
 };
-
-refreshButton.addEventListener('click', async () => {
+async function populateTable() {
   scoresTable.innerHTML = '';
   const scores = await getScores(gameID);
   const scoresArray = generateScores(scores);
   appendScores(scoresArray);
+}
+
+refreshButton.addEventListener('click', async () => {
+  populateTable();
 });
 
-addForm.addEventListener('', () => {
-
-});
 
 if (typeof addForm === 'object' && addForm !== null && 'addEventListener' in addForm) {
-  addForm.addEventListener('submit', (e) => {
+  addForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     const name = nameField.value;
     const score = scoreField.value;
     if (name && score) {
-      postScore(name, score, gameID);
+      await postScore(name, score, gameID);
       nameField.value = '';
       scoreField.value = '';
+      await populateTable();
     }
   });
 }
