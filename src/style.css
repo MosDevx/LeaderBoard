@@ -114,9 +114,6 @@ h2 {
   margin: auto;
   text-align: start;
   width: 100%;
-
-
-  /* height: ; */
 }
 
 .main-section {
@@ -183,8 +180,6 @@ tr:nth-child(odd) {
   background-color: #b16de88a;
 }
 
-
-
 /* CSS */
 .button-89 {
   --b: 3px;   /* border thickness */
@@ -221,8 +216,6 @@ tr:nth-child(odd) {
   background: var(--color);
   color: #fff;
 }
-
-
 
 /* CSS */
 .button-55 {
