@@ -183,16 +183,6 @@ tr:nth-child(odd) {
   background-color: #b16de88a;
 }
 
-.footer {
-  width: 100%;
-  height: 30px;
-  background-color: rgb(154, 154, 154);
-  position: fixed;
-  left: 0;
-  bottom: 0;
-}
-
-
 
 
 /* CSS */
