@@ -28,6 +28,9 @@ body {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  background-image: url('./Assets/topography.png');
+  background-repeat: repeat;
+  font-family: 'Varela', sans-serif;
 }
 
 /*
@@ -74,18 +77,42 @@ h6 {
 }
 
 .title {
-  font-size: 40px;
-  margin-left: 40px;
+  font-size: 80px;
   margin-top: 50px;
+  text-align: center;
+  font-family: 'Keania One', cursive;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 9s ease infinite;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+h2 {
+  font-family: 'Varela', sans-serif;
+  font-size: 28px;
 }
 
 .main {
   margin: auto;
   text-align: start;
   width: 100%;
-  border: 5px solid black;
-
-  /* height: ; */
 }
 
 .main-section {
@@ -102,11 +129,7 @@ h6 {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.button {
-  box-shadow: 4px 4px 0 2px rgba(0, 0, 0, 0.85);
+  margin-bottom: 20px;
 }
 
 .add-form {
@@ -118,13 +141,36 @@ h6 {
 }
 
 input {
-  border: 5px solid black;
+  border-image: linear-gradient(to right bottom, #c53306, #dc3acc);
+  border-width: 3px;
+  border-style: solid;
+  border-image-slice: 1;
+  height: 50px;
+  width: 250px;
+}
+
+/* remove arrows from number input field */
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 .table {
-  border: 5px solid black;
+  /* border: 3px solid orangered; */
   width: 300px;
-  height: 200px;
+  min-height: 40px;
+  border-image: linear-gradient(to right bottom, #260b3c, #a053df);
+  border-width: 3px;
+  border-style: solid;
+  border-image-slice: 1;
 }
 
 tr {
@@ -132,14 +178,85 @@ tr {
 }
 
 tr:nth-child(odd) {
-  background-color: rgb(234, 230, 230);
+  background-color: #b16de88a;
 }
 
-.footer {
-  width: 100%;
-  height: 30px;
-  background-color: rgb(154, 154, 154);
-  position: fixed;
-  left: 0;
-  bottom: 0;
+/* CSS */
+.button-89 {
+  --b: 3px;   /* border thickness */
+  --s: 0.45em; /* size of the corner */
+  --color: #373b44;
+
+  padding: calc(0.5em + var(--s)) calc(0.9em + var(--s));
+  color: var(--color);
+
+  --_p: var(--s);
+
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b), #0000 90deg, var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2 * var(--_p)) calc(100% - var(--b) - 2 * var(--_p));
+  transition: 0.3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: 0.6em;
+  font-size: 19px;
+  font-weight: bolder;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-89:hover,
+.button-89:focus-visible {
+  --_p: 0;
+
+  outline-color: var(--color);
+  outline-offset: 0.05em;
+}
+
+.button-89:active {
+  background: var(--color);
+  color: #fff;
+}
+
+/* CSS */
+.button-55 {
+  align-self: center;
+  background-color: #fff;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #1eeb39;
+  box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #1eeb39;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Neucha, sans-serif;
+  font-size: 1.2rem;
+  line-height: 23px;
+  outline: none;
+  padding: 0.75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-55:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+.button-55:focus {
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
 }

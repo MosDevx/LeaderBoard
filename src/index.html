@@ -11,19 +11,24 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Keania+One&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Varela&display=swap" rel="stylesheet"> 
+
   </head>
   <body>
 
 
     <main class="main">
       
-      <h1 class="title">Leaderboard</h1>
+      <h1 class="title">LEADERBOARD</h1>
       <section class="main-section">
        
 				<section class="display-section">
           <div class="display-title">
             <h2>Recent Scores</h2>
-            <button class="button" id="refresh-button">Refresh</button>
+            <button class="button-55" id="refresh-button">Refresh</button>
           </div>
 
           <table class="table" id="scores-table">
@@ -35,21 +40,19 @@
 
 				<section class="add-section">
 					<div>
-						<h2>Add your Score</h2>
+						<h2>Add Your Score</h2>
 					</div>
 					<form action="" class="add-form" id="add-form">
-						<input type="text" id="name-field" placeholder="Your name"/>
-						<input type="text" id="score-field" placeholder="Your score"/>
-						<input type="submit" class="button"></input>
+						<input type="text" required id="name-field" placeholder="Your name"/>
+						<input type="number" required id="score-field" placeholder="Your score"/>
+						<button value="Submit Score" class="button-89">Submit Score</button>
 					</form>
 				</section>
       
 			</section>
     </main>
 
-    <footer class="footer">
-
-    </footer>       
+    
 
     <script src="" async defer></script>
   </body>
