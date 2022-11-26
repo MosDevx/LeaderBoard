@@ -147,7 +147,7 @@ h2{
 }
 
 input {
-  border-image: linear-gradient(to right bottom, #2cc506, #dc3acc);
+  border-image: linear-gradient(to right bottom, #c53306, #dc3acc);
   border-width: 3px;
   border-style: solid;
   border-image-slice: 1;
